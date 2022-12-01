@@ -9,7 +9,7 @@ export interface PostArr {
 export type PostContextType = {
   posts: PostArr[];
 };
-const PostContext = createContext<PostContextType | null>(null);
+export const PostContext = createContext<PostContextType | null>(null);
 
 export const App: React.FC<React.ReactNode> = () => {
   const [posts, setPosts] = useState<PostArr[]>([
