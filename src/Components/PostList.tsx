@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
+import { Post } from "./Post";
 
-interface Props {
-  posts: Array<{ post: string; user: string; likes: number }>;
-}
 
-export const PostList: React.FC<Props> = ({posts}) => {
-  return <div>PostList</div>;
+export const PostList = () => {
+  // const posts = useContext(PostContext)
+  return (
+    // <div>
+    //   {posts.map((el) => (
+    //     <Post post={el} />
+    //   ))}
+    // </div>
+    <></>
+  );
 };
