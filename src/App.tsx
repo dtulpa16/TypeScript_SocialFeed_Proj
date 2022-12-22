@@ -1,4 +1,4 @@
-import React, { useState, useContext, createContext } from "react";
+import React, { useState, createContext } from "react";
 import "./App.css";
 import { PostList } from "./Components/PostList";
 export interface PostArr {
@@ -15,16 +15,12 @@ export const App: React.FC<React.ReactNode> = () => {
   const [posts, setPosts] = useState<PostArr[]>([
     {
       post: "Test post!",
-      user: "dan",
-      likes: 0,
-    },
-    {
-      post: "Another test post:D",
-      user: "ennin",
+      user: "Dan",
       likes: 0,
     },
   ]);
-
+  
+  console.log("Hello world!")
   return (
     <PostContext.Provider value={{posts}}>
       <PostList />
