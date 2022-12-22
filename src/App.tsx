@@ -20,7 +20,6 @@ export const App: React.FC<React.ReactNode> = () => {
     },
   ]);
   
-  console.log("Hello world!")
   return (
     <PostContext.Provider value={{posts}}>
       <PostList />
